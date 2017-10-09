@@ -2252,6 +2252,11 @@ section.dark-bg .minimal-tabs > li.active > a:hover {
   color: #fff;
   text-align: center;
 }
+.main_logo {
+  width: 700px;
+  margin: auto;
+}
+
 .slide-content.text-left {
   text-align: left;
 }
