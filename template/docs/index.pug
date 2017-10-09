@@ -1,0 +1,581 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Dylan Documentation - HodyLab
+		link(rel="stylesheet", href="css/style.css")
+		link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600', rel='stylesheet', type='text/css')
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css")
+	body
+		#wrapper
+			#sidebar
+				.list-group
+					span.list-group-item Table of Contents
+					a.list-group-item(href="#html") HTML Structure
+					a.list-group-item(href="#helpers") Helper Classes
+					a.list-group-item(href="#elements") Elements
+					a.list-group-item(href="#home") Home Section
+					a.list-group-item(href="#portfolio") Portfolio
+					a.list-group-item(href="#css") CSS
+					a.list-group-item(href="#js") JavaScript
+					a.list-group-item(href="#form") Contact Form Configuration
+					a.list-group-item(href="#signup") Signup Form Configuration
+					a.list-group-item(href="#credits") Credits
+					a.list-group-item(href="#faq") FAQ
+			#content
+				.jumbotron
+					h1 Dylan - Multi-Purpose HTML Template
+					p Thank you for purchasing my theme! If you have any questions that are beyond the scope of this help file, please feel free to email me via my user page contact form.
+					p
+						a.btn.btn-lg(href='http://themeforest.net/user/hodylab#contact', role='button', target="_blank") Get Support
+
+				#versions
+					table.table.table-bordered
+						tbody
+							tr
+								td Author:
+									a(href="http://themeforest.net/user/hodylab", target="_blank")  HodyLab
+								td Contact:
+									a(href="mailto:support@hody.co", target="_blank")  support@hody.co
+							tr
+								td Template version: 1.0
+								td Documentation version: 1.0
+
+				section#html
+					.page-header
+						h2 HTML Structure
+					article
+						p Dylan is based on Bootstrap 3.3.6. If you need to learn more about the grid structure or any other element, visit the #[a(href="http://getbootstrap.com/css/#grid", target="_blank") official documentation].
+						h3 General Page Skeleton
+						pre
+							code.html
+								:code
+									° <!DOCTYPE html>
+									° <html lang="en">
+									°   <head>
+									°     <title>Dylan | Multi-Purpose Creative HTML Template</title>
+									°     <meta charset="UTF-8">
+									°     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+									°     <!-- Stylesheets Here -->
+									°   </head>
+									°
+									°   <body>
+									°     <!-- Preloader -->
+									°     <div id="loader">
+									°       ...
+									°     </div>
+									°
+									°     <!-- Navbar -->
+									°     <header id="topnav">
+									°       ...
+									°     </header>
+									°
+									°     <!-- Home Section -->
+									°     <section id="home">
+									°       ...
+									°     </section>
+									°
+									°     <!-- Content Sections Here -->
+									°
+									°     <!-- Footer -->
+									°     <footer id="footer">
+									°       ...
+									°     </footer>
+									°
+									°     <!-- Scripts Here -->
+									°
+									°   </body>
+									° </html>
+					hr
+					article
+						h3 Sections
+						p Dylan comes with 3 type of sections:
+						table.table.table-bordered.table-striped
+							thead
+								tr
+									th Type
+									th Description
+							tbody
+								tr
+									td Default
+									td A full-width section, available with white, grey, colored and black backgrounds.
+								tr
+									td Split
+									td A split section with an image background.
+								tr
+									td Parallax
+									td A section with an image background and parallax effect.
+						h3 Default Section:
+						pre
+							code.html
+								:code
+									° <section> <!-- You can use .grey-bg, .colored-bg or .dark-bg class to change BG color -->
+									°   <div class="container">
+									°     <div class="title">
+									°       ...
+									°     </div>
+									°     <div class="section-content">
+									°       ...
+									°     </div>
+									°   </div>
+									° </section>
+						h3 Split Section With Image
+						pre
+							code.html
+								:code
+									° <section> <!-- You can use .grey-bg, .colored-bg or .dark-bg class to change BG color -->
+									°   <div class="col-md-6 col-sm-4 img-side img-left"> <!-- You can use .img-right t place the image at right -->
+									°     <div class="img-holder">
+									°       <img src="images/bg/4.jpg" alt="" class="bg-img">
+									°     </div>
+									°   </div>
+									°   <div class="container">
+									°     <div class="col-md-5 col-md-offset-7 col-sm-8 col-sm-offset-4">
+									°     </div>
+									°   </div>
+									° </section>
+						p If you want the image at left you have to give the class "img-left" to the "img-side" div and create a div with offset margin inside the container, for example "col-md-offset-7 col-sm-offset-4".
+						p If you want the image at right, add the class "img-right" to the "img-side" div and remove the offset classes from the div inside the container.
+
+						h3 Parallax Section
+						pre
+							code.html
+								:code
+									° <section class="parallax-bg">
+									°   <div class="row-parallax-bg">
+									°      <div class="parallax-wrapper">
+									°        <div class="parallax-bg-element">
+									°          <img src="images/bg-image-72.jpg" alt=""> <!-- Set your BG image here -->
+									°        </div>
+									°      </div>
+									°      <div class="parallax-overlay"></div>
+									°   </div>
+									°   <div class="container">
+									°      ...
+									°   </div>
+									° </section>
+				section#helpers
+					.page-header
+						h2 Helper Classes
+					article
+						p Dylan includes several CSS classes that help you to style elements without touching CSS files. Here's the list:
+						table.table.table-bordered.table-striped
+							thead
+								tr
+									th Class
+									th Description
+							tbody
+								tr
+									td #[code .centrize] and #[code .v-center]
+									td Center an element vertically. #[b .v-center] must be inside the #[b .centrize] element.
+								tr
+									td #[code .serif]
+									td Use a sans serif font family.
+								tr
+									td #[code .cursive]
+									td Use a cursive font family.
+								tr
+									td #[code .upper]
+									td Make the text uppercase.
+								tr
+									td #[code .b-0]
+									td Remove the borders.
+								tr
+									td #[code .white-text] #[code .black-text] #[code .colored-text] #[code .red-text] #[code .rose-text] #[code .gold-text]
+									td Change the color of the text.
+								tr
+									td #[code .m-0] #[code .mb-0] #[code .mt-0] #[code .mr-0] #[code .ml-0] #[code .mb-15] #[code .mr-15] #[code .ml-15] #[code .mt-15] #[code .mb-25] #[code .mr-25] #[code .ml-25] #[code .mt-25] #[code .mb-50] #[code .mr-50] #[code .ml-50] #[code .mt-50]
+									td Set the margins.
+								tr
+									td #[code .p-0] #[code .pb-0] #[code .pt-0] #[code .pr-0] #[code .pl-0] #[code .pb-15] #[code .pr-15] #[code .pl-15] #[code .pt-15] #[code .pb-25] #[code .pr-25] #[code .pl-25] #[code .pt-25] #[code .pb-50] #[code .pr-50] #[code .pl-50] #[code .pt-50]
+									td Set the padding.
+				section#elements
+					.page-header
+						h2 Elements
+					article
+						h3 Navbar
+						p Dylan includes two styles for the primary navbar, light and dark. If you want to use the dark version, you just need to add the class #[code .dark-menu] to the #[code #topnav] header tag.
+						br
+						h3 Sliders
+						p To setup a slider, you just need to create a #[code .flexslider] div and pass the options in the #[code data-options] attribute, like this:
+						pre
+							code.html
+								:code
+									° <div data-options="{"animation": "slide", "controlNav": true, "directionNav": true}" class="flexslider nav-inside">
+									°   <ul class="slides">
+									°     <li><img src="images/portfolio/single-1.jpg" alt=""></li>
+									°     <li><img src="images/portfolio/single-2.jpg" alt=""></li>
+									°     <li><img src="images/portfolio/single-3.jpg" alt=""></li>
+									°   </ul>
+									° </div>
+						p Available options:
+						table.table.table-bordered.table-striped
+							thead
+								tr
+									th Property
+									th Description
+							tbody
+								tr
+									td #[code animation]
+									td Controls the animation type, "fade" or "slide".
+								tr
+									td #[code controlNav]
+									td Create navigation for paging control of each slide. #[code Boolean]
+								tr
+									td #[code directionNav]
+									td Create previous/next arrow navigation. #[code Boolean]
+						p You can use #[code .nav-inside], #[code .nav-outside], #[code .control-nav-dark] classes to style the controlNav.
+						br
+						h3 Carousels
+						p To setup a carousel, you just need to create a #[code .owl-carousel] div and pass the options in the #[code data-options] attribute, like this:
+						pre
+							code.html
+								:code
+									° <div data-options="{"items": 6, "autoplay": true, "margin": 100, "smItems": 4, "xsItems": 3}" class="owl-carousel">
+									°   <div class="client"><img src="images/clients/1.png" alt=""></div>
+									°   ...
+									° </div>
+						p Available options:
+						table.table.table-bordered.table-striped
+							thead
+								tr
+									th Property
+									th Description
+							tbody
+								tr
+									td #[code items]
+									td The number of items you want to see on the screen.
+								tr
+									td #[code loop]
+									td Inifnity loop. Duplicate last and first items to get loop illusion.
+								tr
+									td #[code dots]
+									td Show dots navigation.
+								tr
+									td #[code margin]
+									td Margin-right(px) on item.
+								tr
+									td #[code autoplay]
+									td Autoplay.
+								tr
+									td #[code xsItems]
+									td The number of items you want to see on small screens (< 768px).
+								tr
+									td #[code smItems]
+									td The number of items you want to see on tablet screens (768px - 991px).
+								tr
+									td #[code mdItems]
+									td The number of items you want to see on medium screens (992px - 1199px).
+						br
+						h3 Maps
+						p You can add a map by simply adding a #map div and pass two options: latitude and longitude. Like this:
+						pre
+							code.html
+								:code
+									<div id="map" data-lat="40.773328" data-lang="-73.960088" class="full-width"></div>
+						p You can use the #[code .full-width] class if you want a full width map. If you want to place it inside a split section be sure to wrap the map div inside the #[code .img-side]
+						br
+						p To enable the map, you need to obtain a Google Maps API key from this #[a(href='https://developers.google.com/maps/documentation/javascript/get-api-key#get-an-api-key', target='_blank') link] (you will see the button "Get a Key").
+						p You can find your latitude and longitude #[a(href="http://universimmedia.pagesperso-orange.fr/geo/loc.htm", target="_blank") here].
+						p At the bottom of the HTML file, there's this line:
+						pre
+							code.html
+								:code
+									° <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=YOUR_API_KEY"></script>
+						p Replace #[code YOUR_API_KEY] with your actual API key.
+						br
+						h3 Anchor Links
+						p If you want to use an anchor link to scroll smoothly to an element of the page, you just need to set the #[code data-scroll] attribute to true. Like this:
+						pre
+							code.html
+								:code
+									<a href="#demos" data-scroll="true" class="btn btn-light-out">Select a demo</a>
+				section#home
+					.page-header
+						h2 Home Section
+					article
+						p In the home section you can use images slider, YouTube video, HTML5 video and animated graphics as background. You can also use it as a parallax section and add a text rotator.
+						h3 Image Slider
+						pre
+							code.html
+								:code
+									° <section id="home";> <!-- You can use .bordered, .kenburn or .particles-bg class to change styles and effects -->
+									°   <div id="home-slider" class="flexslider">
+									°     <ul class="slides">
+									°       <li><img src="images/bg/1.jpg" alt=""> <!-- You can remove the <img> tag if you just want text slider -->
+									°         <div class="slide-wrap">
+									°           <div class="slide-content">
+									°             <div class="container">
+									°               ...
+									°             </div>
+									°           </div>
+									°         </div>
+									°       </li>
+									°     </ul>
+									°   </div>
+									° </section>
+						h3 Video Background
+						p If you want to use a YouTube video you just need to pass the video URL to the "data-property" attribute of the #[code .player] div. You can also set a fallback background image for mobile devices with the #[code data-fallback-bg] attribute. (The jquery.mb.YTPlayer.js plugin does not support mobile devices).
+						pre
+							code.html
+								:code
+									° <section id="home">
+									°   <div class="video-wrapper" data-fallback-bg="images/bg/5.jpg">
+									°     <div data-property="{videoURL: '9No-FiEInLA'}" class="player"></div>
+									°   </div>
+									°   <div id="home-slider" class="flexslider">
+									°     <ul class="slides">
+									°       ...
+									°     </ul>
+									°   </div>
+									° </section>
+						p If you want to use a local video, the #[code .video-wrapper] div should look like this:
+						pre
+							code.html
+								:code
+									° <div class="video-wrapper">
+									°   <video autoplay="true" loop="true" preload="auto">
+									°     <source src="video/video.mp4" type="video/mp4">
+									°     <source src="video/video.webm" type="video/webm">
+									°   </video>
+									° </div>
+						p If you want to change the video, change the value of the #[code src] attribute.
+				section#portfolio
+					.page-header
+						h2 Portfolio
+					article
+						p The portfolio page is split into 2 parts: filters and projects grid:
+						h4 1) Filters
+						pre
+							code.html
+								:code
+									° <ul id="filters">
+									°   <li data-filter="*" class="active">All</li>
+									°   <li data-filter=".branding">Branding</li>
+									°   <li data-filter=".graphic">Graphic</li>
+									°   <li data-filter=".printing">Printing</li>
+									°   <li data-filter=".video">Video</li>
+									° </ul>
+						p If you want to change the filters you just need to change the text and the 'data-filter' attribute.
+						h4 2) Grid
+						p There are two styles for the portfolio items page: #[b boxed] and #[b wide]. If you want to have a full-width grid you have to use the #[b wide] style. It may contain two, three or four columns.
+						pre
+							code.html
+								:code
+									° <div id="works-grid" class="two-col">
+									°   <div class="work-item branding video">
+									°     <div class="work-detail">
+									°       <a href="portfolio-single-1.html">
+									°         <img src="images/portfolio/1.jpg" alt="">
+									°         <div class="work-info">
+									°           <div class="centrize">
+									°             <div class="v-center">
+									°               <h3>Neleman Cava</h3>
+									°               <p>Branding, Video</p>
+									°             </div>
+									°           </div>
+									°         </div>
+									°       </a>
+									°     </div>
+									°   </div>
+									°   <!-- Other Items Here -->
+									° </div>
+						p Each element is composed of:
+						br
+						table.table.table-bordered.table-striped
+							tbody
+								tr
+									td .work-item
+									td To work with the filters every '.work-item' div tag must have the filter class (one or more), for example #[b graphic] and #[b printing]
+								tr
+									td <a>
+									td The 'href' attribute of this tag must link to an existing html file, in this case #[b portfolio-single-1.html]
+								tr
+									td Project Image
+									td Located in images/portfolio folder.
+								tr
+									td .work-info
+									td Contains name and category of the project.
+						br
+
+						p You can use #[code .two-col], #[code .three-col] or #[code .four-col] class to style the grid. If you want to use the #[b wide] style, be sure to unwrap the #[code #works-grid] div from the #[code .container].
+				section#css
+					.page-header
+						h2 CSS
+					article
+						.alert.alert-warning Warning! Unless you are familiar with CSS, I strongly advise you not to play around with these files.
+						p All css files are in #[b /css/] folder.
+						h4 Files:
+						table.table.table-bordered.table-striped
+							tbody
+								tr
+									td bundle.css
+									td Contains all the third-party CSS libraries minified.
+								tr
+									td hody-icons.css
+									td Icon font.
+								tr
+									td construction-skin.css
+									td The CSS file used for the construction homepage.
+								tr
+									td restaurant-skin.css
+									td The CSS file used for the restaurant homepage.
+								tr
+									td lawyer-skin.css
+									td The CSS file used for the lawyer homepage.
+								tr
+									td style.css
+									td The main CSS file.
+								tr
+									td style.less
+									td The LESS version of style.css
+						p The bundle.css file contains these libraries that are located in the #[b /css/lib/] folder:
+						table.table.table-bordered.table-striped
+							tbody
+								tr
+									td bootstrap.css
+									td Bootstrap Framework.
+								tr
+									td flexslider.css
+									td Flexslider style.
+								tr
+									td owl.carousel.css
+									td Owl Carousel style.
+						p If, for example, you want to change the primary color, you have two ways:
+						ol
+							li Open the file "style.css" and replace all occurrences of #[code #1b96ed] with the color that you want.
+							li Compile the less file and change the value of the #[code @primary] variable.
+						.alert.alert-warning Warning! Compile the LESS file only if you are an advanced user. If you don't know what is a LESS file, ignore this procedure.
+						p If you choose the second option, I strongly advise you to use #[a(href="http://gulpjs.com/", target="_blank") Gulp], but only if you are familiar with Node.js. You can read a guide #[a(href="http://www.smashingmagazine.com/2014/06/building-with-gulp/", target="_blank") here].
+						p If you are not familiar with Node, you can use an online compiler like #[a(href="http://lesstester.com/", target="_blank") this]. In this case: paste all the content of the file "style.less" inside the textarea and copy the compiled result. Now you just need to paste the content inside the file "style.css".
+				section#js
+					.page-header
+						h2 JavaScript
+					article
+						.alert.alert-warning Warning! Unless you are familiar with JavaScript, I strongly advise you not to play around with these files.
+						p All scripts are in #[b /js/] folder and they are called at the bottom of the page to make website load faster.
+						pre
+							code.html
+								:code
+									<script type="text/javascript" src="js/jquery.min.js"></script>
+									<script type="text/javascript" src="js/bundle.min.js"></script>
+									<script type="text/javascript" src="js/SmoothScroll.js"></script>
+									<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_APY_KEY"></script>
+
+									<script type="text/javascript" src="js/main.js"></script>
+						p The bundle.js file contains these libraries that are located in the #[b /js/lib/] folder:
+						table.table.table-bordered.table-striped
+							tbody
+								tr
+									td bootstrap.js
+									td Bootstrap Framework.
+								tr
+									td countdown.js
+									td A jQuery plugin for countdown.
+								tr
+									td flexslider.js
+									td Content slider.
+								tr
+									td isotope.js
+									td Portfolio filtering plugin.
+								tr
+									td jquery.ajaxchimp.js
+									td jQuery plugin for Mailchimp forms.
+								tr
+									td jquery.appear.js
+									td jQuery plugin to call a function when an element appears.
+								tr
+									td jquery.countTo.js
+									td A jQuery plugin that will count up (or down) to a target number at a specified speed.
+								tr
+									td jquery.mb.YTPlayer.js
+									td Youtube video background plugin.
+								tr
+									td owl.carousel.min.js
+									td Horizontal carousel plugin.
+								tr
+									td progressbar.min.js
+									td JavaScript plugin for creating responsive and stylish progress bars for the web.
+						p If you want to add custom JavaScript code you can enter it inside the #[code initCustom()] function, at the end of the file "main.js", just before the #[code init()] function.
+				section#form
+					.page-header
+						h2 Contact Form Configuration
+					article
+						p The contact form is submitted without page refresh (AJAX), you just need to set your email address in the mail.php file.
+						pre
+							code.php
+								:code
+									$to = "email@yourdomain.com"; # <--- Your Email
+						p Replace #[b email@yourdomain.com] with your email address. That's it.
+				section#signup
+					.page-header
+						h2 Signup Form Configuration
+					article
+						p The signup form is submitted without page refresh (AJAX) and it uses the #[a(href="http://mailchimp.com/", target="_blank") Mailchimp] APIs. You just need to set your signup form URL in the main.js file, at line #[b 567].
+						pre
+							code.js
+								:code
+									° $('form[data-mailchimp]').each(function(index, el) {
+									°   $(el).ajaxChimp({
+									°     url: 'your-form-url' /* Enter your URL between the single quote chars.*/
+									°     /* Example URL: http://hody.us12.list-manage.com/subscribe/post?u=d9d989sc1b2ba80926372a9fb&id=c789sg65b0 */
+									°   });
+									° });
+				section#credits
+					.page-header
+						h2 Credits
+					article
+						ul
+							li Fonts
+							ol
+								li
+									a(href="https://www.google.com/fonts/specimen/Raleway", target="_blank") Raleway
+								li
+									a(href="https://www.google.com/fonts/specimen/Montserrat", target="_blank") Montserrat
+								li
+									a(href="https://www.google.com/fonts/specimen/Quattrocento", target="_blank") Quattrocento
+								li
+									a(href="https://www.google.com/fonts/specimen/Tangerine", target="_blank") Tangerine
+							li CSS
+							ol
+								li
+									a(href="https://github.com/twbs/bootstrap", target="_blank") Bootstrap
+							li JavaScript
+							ol
+								li
+									a(href="https://github.com/twbs/bootstrap", target="_blank") Boostrap
+								li
+									a(href="https://github.com/sonnyt/downCount", target="_blank") Countdown
+								li
+									a(href="https://github.com/bas2k/jquery.appear/", target="_blank") jQuery Appear
+								li
+									a(href="https://github.com/mhuggins/jquery-countTo") jQuery CountTo
+								li
+									a(href="https://github.com/woothemes/flexslider", target="_blank") Flexslider
+								li
+									a(href="http://isotope.metafizzy.co/", target="_blank") Isotope
+								li
+									a(href="https://github.com/pupunzi/jquery.mb.YTPlayer", target="_blank") mb.YTPlayer
+								li
+									a(href="https://github.com/OwlFonk/OwlCarousel", target="_blank") Owl Carousel
+								li
+									a(href="https://kimmobrunfeldt.github.io/progressbar.js", target="_blank") ProgressBar.js
+								li
+									a(href="https://github.com/scdoshi/jquery-ajaxchimp", target="_blank") Ajaxchimp.js
+				section#faq
+					.page-header
+						h2 FAQ
+					article
+						h3 How to change the version of the template?
+						p #[b Dylan] has different homepage versions. In almost all hosting providers, the main page must be named index.html. So, if you want to use the a different version, you need to rename it to index.html, but first, remember to rename the existing 'index.html' to not lose the default version.
+						hr
+						h3 How to change the icons?
+						p Dylan includes 250+ custom icons. The structure of an icon is the following:
+						pre
+							code.html
+								:code
+									<i class="hc-star"></i>
+						p If you want to change an icon on this theme, just find it in the file #[b "elements-icons.html"], and, in this case, replace the 'hc-star' class, with the class of the icon you want.
+
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js")
+		script hljs.initHighlightingOnLoad();

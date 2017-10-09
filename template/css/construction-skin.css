@@ -1,0 +1,48 @@
+@media(min-width: 992px){
+  #topnav .navigation-menu > li.menu-btn-item > a, #topnav .navigation-menu > li.menu-btn-item.active > a{
+    border-color: #ffb901;
+    background-color: #ffb901;
+  }
+  #topnav .navigation-menu > li.menu-btn-item > a:hover, #topnav .navigation-menu > li.menu-btn-item.active > a:hover{
+    background-color: #ffc734;
+    border-color: #ffc734;
+    color: #fff;
+  }
+}
+
+.btn-color, .newsletter-btn{
+  border-color: #ffb901;
+  background-color: #ffb901;
+}
+
+.btn-color:hover, .newsletter-btn:hover{
+  background-color: #ffc734;
+  border-color: #ffc734;
+  color: #fff;
+}
+
+.btn-color-out{
+  border-color: #ffb901;
+  color: #ffb901;
+}
+
+
+.btn-color-out:hover{
+  background-color: #ffb901;
+  border-color: #ffb901;
+  color: #fff;
+}
+
+section.colored-bg{
+  background-color: #ffb901;
+}
+
+#topnav.stick .navigation-menu > li.active:not(.menu-btn-item) > a, #topnav.stick .navigation-menu > li:not(.menu-btn-item) > a:hover{
+  color: #ffb901;
+}
+
+@media (max-width: 991px){
+  #topnav .navigation-menu > li.active > a{
+    color: #ffb901;
+  }
+}
