@@ -1635,7 +1635,7 @@ section.dark-bg .minimal-tabs > li.active > a:hover {
 #topnav .navigation-menu > li > a {
   display: block;
   color: #fff;
-  font-size: 11px;
+  font-size: 12px;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.10em;
@@ -2509,6 +2509,8 @@ section.grey-bg .icon-box:hover .ib-icon {
   transition: all .3s ease;
   background-color: #ddd;
 }
+
+
 .number-box .number-box-holder h2 {
   font-size: 40px;
   margin: 0;
