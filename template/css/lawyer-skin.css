@@ -1,0 +1,51 @@
+.icon-tabs > li.active > a, .icon-tabs > li.active > a:focus, .icon-tabs > li.active > a:hover{
+  color: #bca480;
+}
+
+@media(min-width: 992px){
+  #topnav .navigation-menu > li.menu-btn-item > a, #topnav .navigation-menu > li.menu-btn-item.active > a{
+    border-color: #bca480;
+    background-color: #bca480;
+  }
+  #topnav .navigation-menu > li.menu-btn-item > a:hover, #topnav .navigation-menu > li.menu-btn-item.active > a:hover{
+    background-color: #c5ad88;
+    border-color: #c5ad88;
+    color: #fff;
+  }
+}
+
+.btn-color, .newsletter-btn{
+  border-color: #bca480;
+  background-color: #bca480;
+}
+
+.btn-color:hover, .newsletter-btn:hover{
+  background-color: #c5ad88;
+  border-color: #c5ad88;
+  color: #fff;
+}
+
+.btn-color-out{
+  border-color: #bca480;
+  color: #bca480;
+}
+
+.btn-color-out:hover{
+  background-color: #bca480;
+  border-color: #bca480;
+  color: #fff;
+}
+
+.icon-box > i{
+  color: #bca480;
+}
+
+#topnav.stick .navigation-menu > li.active:not(.menu-btn-item) > a, #topnav.stick .navigation-menu > li:not(.menu-btn-item) > a:hover{
+  color: #bca480;
+}
+
+@media (max-width: 991px){
+  #topnav .navigation-menu > li.active > a{
+    color: #bca480;
+  }
+}

@@ -1,0 +1,47 @@
+.icon-tabs > li.active > a, .icon-tabs > li.active > a:focus, .icon-tabs > li.active > a:hover{
+  color: #ff4656;
+}
+
+@media(min-width: 992px){
+  #topnav .navigation-menu > li.menu-btn-item > a, #topnav .navigation-menu > li.menu-btn-item.active > a{
+    border-color: #ff4656;
+    background-color: #ff4656;
+  }
+  #topnav .navigation-menu > li.menu-btn-item > a:hover, #topnav .navigation-menu > li.menu-btn-item.active > a:hover{
+    background-color: #ff5a69;
+    border-color: #ff5a69;
+    color: #fff;
+  }
+}
+
+.btn-color, .newsletter-btn{
+  border-color: #ff4656;
+  background-color: #ff4656;
+}
+
+.btn-color:hover, .newsletter-btn:hover{
+  background-color: #ff5a69;
+  border-color: #ff5a69;
+  color: #fff;
+}
+
+.btn-color-out{
+  border-color: #ff4656;
+  color: #ff4656;
+}
+
+.btn-color-out:hover{
+  background-color: #ff4656;
+  border-color: #ff4656;
+  color: #fff;
+}
+
+#topnav.stick .navigation-menu > li.active:not(.menu-btn-item) > a, #topnav.stick .navigation-menu > li:not(.menu-btn-item) > a:hover{
+  color: #ff4656;
+}
+
+@media (max-width: 991px){
+  #topnav .navigation-menu > li.active > a{
+    color: #ff4656;
+  }
+}

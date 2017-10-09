@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Dylan Documentation - HodyLab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="sidebar">
+        <div class="list-group"><span class="list-group-item">Table of Contents</span><a class="list-group-item" href="#html">HTML Structure</a><a class="list-group-item" href="#helpers">Helper Classes</a><a class="list-group-item" href="#elements">Elements</a><a class="list-group-item"
+          href="#home">Home Section</a><a class="list-group-item" href="#portfolio">Portfolio</a><a class="list-group-item" href="#css">CSS</a><a class="list-group-item" href="#js">JavaScript</a><a class="list-group-item" href="#form">Contact Form Configuration</a>
+          <a
+          class="list-group-item" href="#signup">Signup Form Configuration</a><a class="list-group-item" href="#credits">Credits</a><a class="list-group-item" href="#faq">FAQ</a>
+        </div>
+      </div>
+      <div id="content">
+        <div class="jumbotron">
+          <h1>Dylan - Multi-Purpose HTML Template</h1>
+          <p>Thank you for purchasing my theme! If you have any questions that are beyond the scope of this help file, please feel free to email me via my user page contact form.</p>
+          <p><a class="btn btn-lg" href="http://themeforest.net/user/hodylab#contact" role="button" target="_blank">Get Support</a>
+          </p>
+        </div>
+        <div id="versions">
+          <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <td>Author:<a href="http://themeforest.net/user/hodylab" target="_blank"> HodyLab</a>
+                </td>
+                <td>Contact:<a href="mailto:support@hody.co" target="_blank"> support@hody.co</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Template version: 1.0</td>
+                <td>Documentation version: 1.0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <section id="html">
+          <div class="page-header">
+            <h2>HTML Structure</h2>
+          </div>
+          <article>
+            <p>Dylan is based on Bootstrap 3.3.6. If you need to learn more about the grid structure or any other element, visit the <a href="http://getbootstrap.com/css/#grid" target="_blank">official documentation</a>.</p>
+            <h3>General Page Skeleton</h3>
+            <pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;title&gt;Dylan | Multi-Purpose Creative HTML Template&lt;/title&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0&quot;&gt;
+    &lt;!-- Stylesheets Here --&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;!-- Preloader --&gt;
+    &lt;div id=&quot;loader&quot;&gt;
+      ...
+    &lt;/div&gt;
+
+    &lt;!-- Navbar --&gt;
+    &lt;header id=&quot;topnav&quot;&gt;
+      ...
+    &lt;/header&gt;
+
+    &lt;!-- Home Section --&gt;
+    &lt;section id=&quot;home&quot;&gt;
+      ...
+    &lt;/section&gt;
+
+    &lt;!-- Content Sections Here --&gt;
+
+    &lt;!-- Footer --&gt;
+    &lt;footer id=&quot;footer&quot;&gt;
+      ...
+    &lt;/footer&gt;
+
+    &lt;!-- Scripts Here --&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          </article>
+          <hr>
+          <article>
+            <h3>Sections</h3>
+            <p>Dylan comes with 3 type of sections:</p>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Default</td>
+                  <td>A full-width section, available with white, grey, colored and black backgrounds.</td>
+                </tr>
+                <tr>
+                  <td>Split</td>
+                  <td>A split section with an image background.</td>
+                </tr>
+                <tr>
+                  <td>Parallax</td>
+                  <td>A section with an image background and parallax effect.</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>Default Section:</h3>
+            <pre><code class="html">&lt;section&gt; &lt;!-- You can use .grey-bg, .colored-bg or .dark-bg class to change BG color --&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;title&quot;&gt;
+      ...
+    &lt;/div&gt;
+    &lt;div class=&quot;section-content&quot;&gt;
+      ...
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+            <h3>Split Section With Image</h3>
+            <pre><code class="html">&lt;section&gt; &lt;!-- You can use .grey-bg, .colored-bg or .dark-bg class to change BG color --&gt;
+  &lt;div class=&quot;col-md-6 col-sm-4 img-side img-left&quot;&gt; &lt;!-- You can use .img-right t place the image at right --&gt;
+    &lt;div class=&quot;img-holder&quot;&gt;
+      &lt;img src=&quot;images/bg/4.jpg&quot; alt=&quot;&quot; class=&quot;bg-img&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;col-md-5 col-md-offset-7 col-sm-8 col-sm-offset-4&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+            <p>If you want the image at left you have to give the class "img-left" to the "img-side" div and create a div with offset margin inside the container, for example "col-md-offset-7 col-sm-offset-4".</p>
+            <p>If you want the image at right, add the class "img-right" to the "img-side" div and remove the offset classes from the div inside the container.</p>
+            <h3>Parallax Section</h3>
+            <pre><code class="html">&lt;section class=&quot;parallax-bg&quot;&gt;
+  &lt;div class=&quot;row-parallax-bg&quot;&gt;
+     &lt;div class=&quot;parallax-wrapper&quot;&gt;
+       &lt;div class=&quot;parallax-bg-element&quot;&gt;
+         &lt;img src=&quot;images/bg-image-72.jpg&quot; alt=&quot;&quot;&gt; &lt;!-- Set your BG image here --&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;div class=&quot;parallax-overlay&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;container&quot;&gt;
+     ...
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+          </article>
+        </section>
+        <section id="helpers">
+          <div class="page-header">
+            <h2>Helper Classes</h2>
+          </div>
+          <article>
+            <p>Dylan includes several CSS classes that help you to style elements without touching CSS files. Here's the list:</p>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>.centrize</code> and <code>.v-center</code>
+                  </td>
+                  <td>Center an element vertically. <b>.v-center</b> must be inside the <b>.centrize</b> element.</td>
+                </tr>
+                <tr>
+                  <td><code>.serif</code>
+                  </td>
+                  <td>Use a sans serif font family.</td>
+                </tr>
+                <tr>
+                  <td><code>.cursive</code>
+                  </td>
+                  <td>Use a cursive font family.</td>
+                </tr>
+                <tr>
+                  <td><code>.upper</code>
+                  </td>
+                  <td>Make the text uppercase.</td>
+                </tr>
+                <tr>
+                  <td><code>.b-0</code>
+                  </td>
+                  <td>Remove the borders.</td>
+                </tr>
+                <tr>
+                  <td><code>.white-text</code>  <code>.black-text</code>  <code>.colored-text</code>  <code>.red-text</code>  <code>.rose-text</code>  <code>.gold-text</code>
+                  </td>
+                  <td>Change the color of the text.</td>
+                </tr>
+                <tr>
+                  <td><code>.m-0</code>  <code>.mb-0</code>  <code>.mt-0</code>  <code>.mr-0</code>  <code>.ml-0</code>  <code>.mb-15</code>  <code>.mr-15</code>  <code>.ml-15</code>  <code>.mt-15</code>  <code>.mb-25</code>  <code>.mr-25</code>  <code>.ml-25</code>  <code>.mt-25</code>  <code>.mb-50</code>  <code>.mr-50</code>  <code>.ml-50</code>  <code>.mt-50</code>
+                  </td>
+                  <td>Set the margins.</td>
+                </tr>
+                <tr>
+                  <td><code>.p-0</code>  <code>.pb-0</code>  <code>.pt-0</code>  <code>.pr-0</code>  <code>.pl-0</code>  <code>.pb-15</code>  <code>.pr-15</code>  <code>.pl-15</code>  <code>.pt-15</code>  <code>.pb-25</code>  <code>.pr-25</code>  <code>.pl-25</code>  <code>.pt-25</code>  <code>.pb-50</code>  <code>.pr-50</code>  <code>.pl-50</code>  <code>.pt-50</code>
+                  </td>
+                  <td>Set the padding.</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+        <section id="elements">
+          <div class="page-header">
+            <h2>Elements</h2>
+          </div>
+          <article>
+            <h3>Navbar</h3>
+            <p>Dylan includes two styles for the primary navbar, light and dark. If you want to use the dark version, you just need to add the class <code>.dark-menu</code> to the <code>#topnav</code> header tag.</p>
+            <br>
+            <h3>Sliders</h3>
+            <p>To setup a slider, you just need to create a <code>.flexslider</code> div and pass the options in the <code>data-options</code> attribute, like this:</p>
+            <pre><code class="html">&lt;div data-options=&quot;{&quot;animation&quot;: &quot;slide&quot;, &quot;controlNav&quot;: true, &quot;directionNav&quot;: true}&quot; class=&quot;flexslider nav-inside&quot;&gt;
+  &lt;ul class=&quot;slides&quot;&gt;
+    &lt;li&gt;&lt;img src=&quot;images/portfolio/single-1.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src=&quot;images/portfolio/single-2.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src=&quot;images/portfolio/single-3.jpg&quot; alt=&quot;&quot;&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+            <p>Available options:</p>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Property</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>animation</code>
+                  </td>
+                  <td>Controls the animation type, "fade" or "slide".</td>
+                </tr>
+                <tr>
+                  <td><code>controlNav</code>
+                  </td>
+                  <td>Create navigation for paging control of each slide. <code>Boolean</code>
+                  </td>
+                </tr>
+                <tr>
+                  <td><code>directionNav</code>
+                  </td>
+                  <td>Create previous/next arrow navigation. <code>Boolean</code>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p>You can use <code>.nav-inside</code>, <code>.nav-outside</code>, <code>.control-nav-dark</code> classes to style the controlNav.</p>
+            <br>
+            <h3>Carousels</h3>
+            <p>To setup a carousel, you just need to create a <code>.owl-carousel</code> div and pass the options in the <code>data-options</code> attribute, like this:</p>
+            <pre><code class="html">&lt;div data-options=&quot;{&quot;items&quot;: 6, &quot;autoplay&quot;: true, &quot;margin&quot;: 100, &quot;smItems&quot;: 4, &quot;xsItems&quot;: 3}&quot; class=&quot;owl-carousel&quot;&gt;
+  &lt;div class=&quot;client&quot;&gt;&lt;img src=&quot;images/clients/1.png&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+  ...
+&lt;/div&gt;</code></pre>
+            <p>Available options:</p>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Property</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>items</code>
+                  </td>
+                  <td>The number of items you want to see on the screen.</td>
+                </tr>
+                <tr>
+                  <td><code>loop</code>
+                  </td>
+                  <td>Inifnity loop. Duplicate last and first items to get loop illusion.</td>
+                </tr>
+                <tr>
+                  <td><code>dots</code>
+                  </td>
+                  <td>Show dots navigation.</td>
+                </tr>
+                <tr>
+                  <td><code>margin</code>
+                  </td>
+                  <td>Margin-right(px) on item.</td>
+                </tr>
+                <tr>
+                  <td><code>autoplay</code>
+                  </td>
+                  <td>Autoplay.</td>
+                </tr>
+                <tr>
+                  <td><code>xsItems</code>
+                  </td>
+                  <td>The number of items you want to see on small screens (
+                    < 768px).</td>
+                </tr>
+                <tr>
+                  <td><code>smItems</code>
+                  </td>
+                  <td>The number of items you want to see on tablet screens (768px - 991px).</td>
+                </tr>
+                <tr>
+                  <td><code>mdItems</code>
+                  </td>
+                  <td>The number of items you want to see on medium screens (992px - 1199px).</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <h3>Maps</h3>
+            <p>You can add a map by simply adding a #map div and pass two options: latitude and longitude. Like this:</p>
+            <pre><code class="html">&lt;div id=&quot;map&quot; data-lat=&quot;40.773328&quot; data-lang=&quot;-73.960088&quot; class=&quot;full-width&quot;&gt;&lt;/div&gt;</code></pre>
+            <p>You can use the <code>.full-width</code> class if you want a full width map. If you want to place it inside a split section be sure to wrap the map div inside the <code>.img-side</code>
+            </p>
+            <br>
+            <p>To enable the map, you need to obtain a Google Maps API key from this <a href="https://developers.google.com/maps/documentation/javascript/get-api-key#get-an-api-key" target="_blank">link</a> (you will see the button "Get a Key").</p>
+            <p>You can find your latitude and longitude <a href="http://universimmedia.pagesperso-orange.fr/geo/loc.htm" target="_blank">here</a>.</p>
+            <p>At the bottom of the HTML file, there's this line:</p>
+            <pre><code class="html">&lt;script src=&quot;https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=YOUR_API_KEY&quot;&gt;&lt;/script&gt;</code></pre>
+            <p>Replace <code>YOUR_API_KEY</code> with your actual API key.</p>
+            <br>
+            <h3>Anchor Links</h3>
+            <p>If you want to use an anchor link to scroll smoothly to an element of the page, you just need to set the <code>data-scroll</code> attribute to true. Like this:</p>
+            <pre><code class="html">&lt;a href=&quot;&#35;demos&quot; data-scroll=&quot;true&quot; class=&quot;btn btn-light-out&quot;&gt;Select a demo&lt;/a&gt;</code></pre>
+          </article>
+        </section>
+        <section id="home">
+          <div class="page-header">
+            <h2>Home Section</h2>
+          </div>
+          <article>
+            <p>In the home section you can use images slider, YouTube video, HTML5 video and animated graphics as background. You can also use it as a parallax section and add a text rotator.</p>
+            <h3>Image Slider</h3>
+            <pre><code class="html">&lt;section id=&quot;home&quot;;&gt; &lt;!-- You can use .bordered, .kenburn or .particles-bg class to change styles and effects --&gt;
+  &lt;div id=&quot;home-slider&quot; class=&quot;flexslider&quot;&gt;
+    &lt;ul class=&quot;slides&quot;&gt;
+      &lt;li&gt;&lt;img src=&quot;images/bg/1.jpg&quot; alt=&quot;&quot;&gt; &lt;!-- You can remove the &lt;img&gt; tag if you just want text slider --&gt;
+        &lt;div class=&quot;slide-wrap&quot;&gt;
+          &lt;div class=&quot;slide-content&quot;&gt;
+            &lt;div class=&quot;container&quot;&gt;
+              ...
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+            <h3>Video Background</h3>
+            <p>If you want to use a YouTube video you just need to pass the video URL to the "data-property" attribute of the <code>.player</code> div. You can also set a fallback background image for mobile devices with the <code>data-fallback-bg</code> attribute.
+              (The jquery.mb.YTPlayer.js plugin does not support mobile devices).</p>
+            <pre><code class="html">&lt;section id=&quot;home&quot;&gt;
+  &lt;div class=&quot;video-wrapper&quot; data-fallback-bg=&quot;images/bg/5.jpg&quot;&gt;
+    &lt;div data-property=&quot;{videoURL: '9No-FiEInLA'}&quot; class=&quot;player&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;home-slider&quot; class=&quot;flexslider&quot;&gt;
+    &lt;ul class=&quot;slides&quot;&gt;
+      ...
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+            <p>If you want to use a local video, the <code>.video-wrapper</code> div should look like this:</p>
+            <pre><code class="html">&lt;div class=&quot;video-wrapper&quot;&gt;
+  &lt;video autoplay=&quot;true&quot; loop=&quot;true&quot; preload=&quot;auto&quot;&gt;
+    &lt;source src=&quot;video/video.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    &lt;source src=&quot;video/video.webm&quot; type=&quot;video/webm&quot;&gt;
+  &lt;/video&gt;
+&lt;/div&gt;</code></pre>
+            <p>If you want to change the video, change the value of the <code>src</code> attribute.</p>
+          </article>
+        </section>
+        <section id="portfolio">
+          <div class="page-header">
+            <h2>Portfolio</h2>
+          </div>
+          <article>
+            <p>The portfolio page is split into 2 parts: filters and projects grid:</p>
+            <h4>1) Filters</h4>
+            <pre><code class="html">&lt;ul id=&quot;filters&quot;&gt;
+  &lt;li data-filter=&quot;*&quot; class=&quot;active&quot;&gt;All&lt;/li&gt;
+  &lt;li data-filter=&quot;.branding&quot;&gt;Branding&lt;/li&gt;
+  &lt;li data-filter=&quot;.graphic&quot;&gt;Graphic&lt;/li&gt;
+  &lt;li data-filter=&quot;.printing&quot;&gt;Printing&lt;/li&gt;
+  &lt;li data-filter=&quot;.video&quot;&gt;Video&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            <p>If you want to change the filters you just need to change the text and the 'data-filter' attribute.</p>
+            <h4>2) Grid</h4>
+            <p>There are two styles for the portfolio items page: <b>boxed</b> and <b>wide</b>. If you want to have a full-width grid you have to use the <b>wide</b> style. It may contain two, three or four columns.</p>
+            <pre><code class="html">&lt;div id=&quot;works-grid&quot; class=&quot;two-col&quot;&gt;
+  &lt;div class=&quot;work-item branding video&quot;&gt;
+    &lt;div class=&quot;work-detail&quot;&gt;
+      &lt;a href=&quot;portfolio-single-1.html&quot;&gt;
+        &lt;img src=&quot;images/portfolio/1.jpg&quot; alt=&quot;&quot;&gt;
+        &lt;div class=&quot;work-info&quot;&gt;
+          &lt;div class=&quot;centrize&quot;&gt;
+            &lt;div class=&quot;v-center&quot;&gt;
+              &lt;h3&gt;Neleman Cava&lt;/h3&gt;
+              &lt;p&gt;Branding, Video&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- Other Items Here --&gt;
+&lt;/div&gt;</code></pre>
+            <p>Each element is composed of:</p>
+            <br>
+            <table class="table table-bordered table-striped">
+              <tbody>
+                <tr>
+                  <td>.work-item</td>
+                  <td>To work with the filters every '.work-item' div tag must have the filter class (one or more), for example <b>graphic</b> and <b>printing</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a>
+                  </td>
+                  <td>The 'href' attribute of this tag must link to an existing html file, in this case <b>portfolio-single-1.html</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Project Image</td>
+                  <td>Located in images/portfolio folder.</td>
+                </tr>
+                <tr>
+                  <td>.work-info</td>
+                  <td>Contains name and category of the project.</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <p>You can use <code>.two-col</code>, <code>.three-col</code> or <code>.four-col</code> class to style the grid. If you want to use the <b>wide</b> style, be sure to unwrap the <code>#works-grid</code> div from the <code>.container</code>.</p>
+          </article>
+        </section>
+        <section id="css">
+          <div class="page-header">
+            <h2>CSS</h2>
+          </div>
+          <article>
+            <div class="alert alert-warning">Warning! Unless you are familiar with CSS, I strongly advise you not to play around with these files.</div>
+            <p>All css files are in <b>/css/</b> folder.</p>
+            <h4>Files:</h4>
+            <table class="table table-bordered table-striped">
+              <tbody>
+                <tr>
+                  <td>bundle.css</td>
+                  <td>Contains all the third-party CSS libraries minified.</td>
+                </tr>
+                <tr>
+                  <td>hody-icons.css</td>
+                  <td>Icon font.</td>
+                </tr>
+                <tr>
+                  <td>construction-skin.css</td>
+                  <td>The CSS file used for the construction homepage.</td>
+                </tr>
+                <tr>
+                  <td>restaurant-skin.css</td>
+                  <td>The CSS file used for the restaurant homepage.</td>
+                </tr>
+                <tr>
+                  <td>lawyer-skin.css</td>
+                  <td>The CSS file used for the lawyer homepage.</td>
+                </tr>
+                <tr>
+                  <td>style.css</td>
+                  <td>The main CSS file.</td>
+                </tr>
+                <tr>
+                  <td>style.less</td>
+                  <td>The LESS version of style.css</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>The bundle.css file contains these libraries that are located in the <b>/css/lib/</b> folder:</p>
+            <table class="table table-bordered table-striped">
+              <tbody>
+                <tr>
+                  <td>bootstrap.css</td>
+                  <td>Bootstrap Framework.</td>
+                </tr>
+                <tr>
+                  <td>flexslider.css</td>
+                  <td>Flexslider style.</td>
+                </tr>
+                <tr>
+                  <td>owl.carousel.css</td>
+                  <td>Owl Carousel style.</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>If, for example, you want to change the primary color, you have two ways:</p>
+            <ol>
+              <li>Open the file "style.css" and replace all occurrences of <code>#1b96ed</code> with the color that you want.</li>
+              <li>Compile the less file and change the value of the <code>@primary</code> variable.</li>
+            </ol>
+            <div class="alert alert-warning">Warning! Compile the LESS file only if you are an advanced user. If you don't know what is a LESS file, ignore this procedure.</div>
+            <p>If you choose the second option, I strongly advise you to use <a href="http://gulpjs.com/" target="_blank">Gulp</a>, but only if you are familiar with Node.js. You can read a guide <a href="http://www.smashingmagazine.com/2014/06/building-with-gulp/"
+              target="_blank">here</a>.</p>
+            <p>If you are not familiar with Node, you can use an online compiler like <a href="http://lesstester.com/" target="_blank">this</a>. In this case: paste all the content of the file "style.less" inside the textarea and copy the compiled result.
+              Now you just need to paste the content inside the file "style.css".</p>
+          </article>
+        </section>
+        <section id="js">
+          <div class="page-header">
+            <h2>JavaScript</h2>
+          </div>
+          <article>
+            <div class="alert alert-warning">Warning! Unless you are familiar with JavaScript, I strongly advise you not to play around with these files.</div>
+            <p>All scripts are in <b>/js/</b> folder and they are called at the bottom of the page to make website load faster.</p>
+            <pre><code class="html">&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/bundle.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/SmoothScroll.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://maps.googleapis.com/maps/api/js?key=YOUR_APY_KEY&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/main.js&quot;&gt;&lt;/script&gt;</code></pre>
+            <p>The bundle.js file contains these libraries that are located in the <b>/js/lib/</b> folder:</p>
+            <table class="table table-bordered table-striped">
+              <tbody>
+                <tr>
+                  <td>bootstrap.js</td>
+                  <td>Bootstrap Framework.</td>
+                </tr>
+                <tr>
+                  <td>countdown.js</td>
+                  <td>A jQuery plugin for countdown.</td>
+                </tr>
+                <tr>
+                  <td>flexslider.js</td>
+                  <td>Content slider.</td>
+                </tr>
+                <tr>
+                  <td>isotope.js</td>
+                  <td>Portfolio filtering plugin.</td>
+                </tr>
+                <tr>
+                  <td>jquery.ajaxchimp.js</td>
+                  <td>jQuery plugin for Mailchimp forms.</td>
+                </tr>
+                <tr>
+                  <td>jquery.appear.js</td>
+                  <td>jQuery plugin to call a function when an element appears.</td>
+                </tr>
+                <tr>
+                  <td>jquery.countTo.js</td>
+                  <td>A jQuery plugin that will count up (or down) to a target number at a specified speed.</td>
+                </tr>
+                <tr>
+                  <td>jquery.mb.YTPlayer.js</td>
+                  <td>Youtube video background plugin.</td>
+                </tr>
+                <tr>
+                  <td>owl.carousel.min.js</td>
+                  <td>Horizontal carousel plugin.</td>
+                </tr>
+                <tr>
+                  <td>progressbar.min.js</td>
+                  <td>JavaScript plugin for creating responsive and stylish progress bars for the web.</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>If you want to add custom JavaScript code you can enter it inside the <code>initCustom()</code> function, at the end of the file "main.js", just before the <code>init()</code> function.</p>
+          </article>
+        </section>
+        <section id="form">
+          <div class="page-header">
+            <h2>Contact Form Configuration</h2>
+          </div>
+          <article>
+            <p>The contact form is submitted without page refresh (AJAX), you just need to set your email address in the mail.php file.</p>
+            <pre><code class="php">$to = &quot;email@yourdomain.com&quot;; &#35; &lt;--- Your Email</code></pre>
+            <p>Replace <b>email@yourdomain.com</b> with your email address. That's it.</p>
+          </article>
+        </section>
+        <section id="signup">
+          <div class="page-header">
+            <h2>Signup Form Configuration</h2>
+          </div>
+          <article>
+            <p>The signup form is submitted without page refresh (AJAX) and it uses the <a href="http://mailchimp.com/" target="_blank">Mailchimp</a> APIs. You just need to set your signup form URL in the main.js file, at line <b>567</b>.</p>
+            <pre><code class="js">$('form[data-mailchimp]').each(function(index, el) {
+  $(el).ajaxChimp({
+    url: 'your-form-url' /* Enter your URL between the single quote chars.*/
+    /* Example URL: http://hody.us12.list-manage.com/subscribe/post?u=d9d989sc1b2ba80926372a9fb&amp;id=c789sg65b0 */
+  });
+});</code></pre>
+          </article>
+        </section>
+        <section id="credits">
+          <div class="page-header">
+            <h2>Credits</h2>
+          </div>
+          <article>
+            <ul>
+              <li>Fonts</li>
+              <ol>
+                <li><a href="https://www.google.com/fonts/specimen/Raleway" target="_blank">Raleway</a>
+                </li>
+                <li><a href="https://www.google.com/fonts/specimen/Montserrat" target="_blank">Montserrat</a>
+                </li>
+                <li><a href="https://www.google.com/fonts/specimen/Quattrocento" target="_blank">Quattrocento</a>
+                </li>
+                <li><a href="https://www.google.com/fonts/specimen/Tangerine" target="_blank">Tangerine</a>
+                </li>
+              </ol>
+              <li>CSS</li>
+              <ol>
+                <li><a href="https://github.com/twbs/bootstrap" target="_blank">Bootstrap</a>
+                </li>
+              </ol>
+              <li>JavaScript</li>
+              <ol>
+                <li><a href="https://github.com/twbs/bootstrap" target="_blank">Boostrap</a>
+                </li>
+                <li><a href="https://github.com/sonnyt/downCount" target="_blank">Countdown</a>
+                </li>
+                <li><a href="https://github.com/bas2k/jquery.appear/" target="_blank">jQuery Appear</a>
+                </li>
+                <li><a href="https://github.com/mhuggins/jquery-countTo">jQuery CountTo</a>
+                </li>
+                <li><a href="https://github.com/woothemes/flexslider" target="_blank">Flexslider</a>
+                </li>
+                <li><a href="http://isotope.metafizzy.co/" target="_blank">Isotope</a>
+                </li>
+                <li><a href="https://github.com/pupunzi/jquery.mb.YTPlayer" target="_blank">mb.YTPlayer</a>
+                </li>
+                <li><a href="https://github.com/OwlFonk/OwlCarousel" target="_blank">Owl Carousel</a>
+                </li>
+                <li><a href="https://kimmobrunfeldt.github.io/progressbar.js" target="_blank">ProgressBar.js</a>
+                </li>
+                <li><a href="https://github.com/scdoshi/jquery-ajaxchimp" target="_blank">Ajaxchimp.js</a>
+                </li>
+              </ol>
+            </ul>
+          </article>
+        </section>
+        <section id="faq">
+          <div class="page-header">
+            <h2>FAQ</h2>
+          </div>
+          <article>
+            <h3>How to change the version of the template?</h3>
+            <p><b>Dylan</b> has different homepage versions. In almost all hosting providers, the main page must be named index.html. So, if you want to use the a different version, you need to rename it to index.html, but first, remember to rename the existing
+              'index.html' to not lose the default version.</p>
+            <hr>
+            <h3>How to change the icons?</h3>
+            <p>Dylan includes 250+ custom icons. The structure of an icon is the following:</p>
+            <pre><code class="html">&lt;i class=&quot;hc-star&quot;&gt;&lt;/i&gt;</code></pre>
+            <p>If you want to change an icon on this theme, just find it in the file <b>"elements-icons.html"</b>, and, in this case, replace the 'hc-star' class, with the class of the icon you want.</p>
+          </article>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+
+</html>
