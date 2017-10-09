@@ -2210,7 +2210,7 @@ section.dark-bg .minimal-tabs > li.active > a:hover {
   height: 100%;
   width: 100%;
   position: relative;
-  background-color: rgba(34, 34, 37, 0.20);
+  background-color: rgba(34, 34, 37, 0.30);
   z-index: 200;
 }
 .slide-wrap.extra-dark {
@@ -2243,6 +2243,7 @@ section.dark-bg .minimal-tabs > li.active > a:hover {
   bottom: 0;
   opacity: .75;
 }
+
 .slide-content {
   display: table-cell;
   vertical-align: middle;
@@ -2251,10 +2252,6 @@ section.dark-bg .minimal-tabs > li.active > a:hover {
   z-index: 10;
   color: #fff;
   text-align: center;
-}
-.main_logo {
-  width: 700px;
-  margin: auto;
 }
 
 .slide-content.text-left {
@@ -2334,18 +2331,6 @@ section.dark-bg .minimal-tabs > li.active > a:hover {
 */
 section.grey-bg .icon-box:hover .ib-icon {
   border-color: #f7f7f7;
-}
-
-section.transparent {
-  background-color: rgba(34, 34, 37, 0.20);
-  width: 100%;
-  height: 100%;
-  display: table;
-  table-layout: fixed;
-  z-index: 200;
-  position: relative;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .icon-box {
