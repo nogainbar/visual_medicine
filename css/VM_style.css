@@ -43,6 +43,25 @@
   color: #2D2D2B;
 }
 
+.link {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 26px;
+  letter-spacing: 0.02;
+  color: #1b96ed;
+}
+
+.link-center {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 26px;
+  letter-spacing: 0.02;
+  color: #1b96ed;
+  text-align: center;
+}
+
 section.hero-story {
   background-color: rgba(34, 34, 37, 0.30);
   width: 100%;
