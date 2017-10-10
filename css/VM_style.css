@@ -78,3 +78,22 @@ section.hero-story {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
+.article-single h4 {
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.article-single p {
+line-height: 1.6;
+}
+
+.article-single blockquote {
+  margin: 25px 0;
+  border-left: 2px solid #222225;
+  color: #2d2d2d;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1.75;
+}
