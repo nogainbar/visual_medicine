@@ -81,7 +81,7 @@ section.hero-story {
 .hero-text {
   font-size: 32px;
   color: white;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .number-box-holder {
@@ -119,6 +119,8 @@ line-height: 1.6;
 
 .turqiose-bg {
   background-color: rgba(5, 112, 110, 0.85);
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 
 .f-white h2 {
