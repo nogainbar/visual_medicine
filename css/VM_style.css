@@ -149,3 +149,12 @@ line-height: 1.6;
   margin-right: 10px;
   color: #1b96ed;
 }
+
+.VM-image-box-holder {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  transition: all .3s ease;
+  background-size: cover;
+}
