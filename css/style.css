@@ -580,7 +580,7 @@ section.dark-bg .title > hr {
   top: 0;
   left: 0;
   z-index: 10;
-  /*background-color: rgba(45, 45, 45, 0.4);*/
+  background-color: rgba(45, 45, 45, 0);
   color: #fff;
   height: 100%;
   width: 100%;
@@ -1639,7 +1639,7 @@ section.dark-bg .minimal-tabs > li.active > a:hover {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.10em;
-  font-weight: 400;
+  font-weight: 700;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   line-height: 20px;
