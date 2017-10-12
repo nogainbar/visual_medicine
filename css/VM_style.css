@@ -158,3 +158,15 @@ line-height: 1.6;
   transition: all .3s ease;
   background-size: cover;
 }
+
+#topnav .navigation-menu > li > a {
+  font-weight: 700;
+}
+
+#topnav .navigation-menu > li .submenu {
+  background-color: white;
+}
+
+#topnav .navigation-menu > li .submenu li a {
+  color: #2d2d2d;
+}
