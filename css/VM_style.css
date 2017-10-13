@@ -19,9 +19,6 @@
   line-height: 20px;
 }
 
-#topnav .logo:hover {
-  color: #1b96ed;
-}
 #topnav .logo:after {
   position: absolute;
   right: 15px;
@@ -49,7 +46,11 @@
   margin-top: 10px;
   line-height: 26px;
   letter-spacing: 0.02;
-  color: #1b96ed;
+  color: #05706E;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .link-center {
@@ -58,7 +59,7 @@
   margin-top: 10px;
   line-height: 26px;
   letter-spacing: 0.02;
-  color: #1b96ed;
+  color: #05706E;
   text-align: center;
 }
 
@@ -131,6 +132,10 @@ line-height: 1.6;
   color: white;
 }
 
+.f-white a {
+  color: white;
+}
+
 .VM-arrow-list > li > a {
   color: white;
   text-decoration: none;
@@ -149,7 +154,7 @@ line-height: 1.6;
   vertical-align: middle;
   font-size: 10px;
   margin-right: 10px;
-  color: #1b96ed;
+  color: #05706E;
 }
 
 .VM-image-box-holder {
