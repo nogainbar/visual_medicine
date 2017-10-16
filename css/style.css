@@ -75,11 +75,11 @@ a {
   color: #05706E;
 }
 a:hover {
-  color: #4aacf1;
+  color: #05706E;
   text-decoration: none;
 }
 a:focus {
-  color: #107ac5;
+  color: #05706E;
   text-decoration: none;
 }
 a.small-link {
@@ -2860,7 +2860,7 @@ section.dark-bg .text-box.outlined {
   width: 100%;
   height: 100%;
   padding: 30px 40px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(5, 112, 110, 0.85);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   opacity: 0;
@@ -2870,7 +2870,7 @@ section.dark-bg .text-box.outlined {
 }
 .work-info h3 {
   color: #fff;
-  font-size: 18px;
+  /*font-size: 18px;*/
   font-weight: 700;
   -webkit-transform: translateX(-30px);
   transform: translateX(-30px);
