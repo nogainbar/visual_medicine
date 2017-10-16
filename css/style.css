@@ -3334,9 +3334,9 @@ section.dark-bg .timeline .timeline-content:before {
   Accordion
 */
 .accordion > li {
-  border-width: 1px 1px 0 1px;
+  /*border-width: 1px 1px 0 1px;
   border-style: solid;
-  border-color: #e7e7e7;
+  border-color: #e7e7e7;*/
 }
 .accordion > li:last-child {
   border-bottom-width: 1px;
