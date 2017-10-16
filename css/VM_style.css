@@ -177,3 +177,8 @@ line-height: 1.6;
 #topnav .navigation-menu > li .submenu li a {
   color: #2d2d2d;
 }
+
+.VM-product-col {
+  padding-left: 0px;
+  padding-right: 0px;
+}
