@@ -41,7 +41,7 @@
 
 @black: #2d2d2d;
 @black_bg: #222225;
-@primary: #1b96ed;
+@primary: #05706E;
 @primary_font: 'Raleway';
 @heading_font: 'Montserrat';
 @serif_font: 'Quattrocento';
@@ -475,9 +475,9 @@ section.dark-bg{
   border-color: @primary;
   background-color: @primary;
   &:hover, &:active, &:focus{
-    background-color: lighten(@primary, 4%);
+    background-color: #fff;
     border-color: lighten(@primary, 4%);
-    color: #fff;
+    color: lighten(@primary, 4%);
   }
 }
 
@@ -2445,7 +2445,7 @@ section.dark-bg{
   height: 100%;
   width: 100%;
   position: relative;
-  background-color: fade(@black_bg, 45%);
+  // background-color: fade(@black_bg, 45%);
   z-index: 200;
   &.extra-dark{
     background-color: fade(#000, 75%);
@@ -3130,7 +3130,7 @@ section.dark-bg{
   }
   h3{
     color: #fff;
-    font-size: 18px;
+    // font-size: 18px;
     font-weight: 700;
     -webkit-transform: translateX(-30px);
     transform: translateX(-30px);
@@ -3639,9 +3639,9 @@ section.dark-bg{
 */
 .accordion{
   >li{
-    border-width: 1px 1px 0 1px;
-    border-style: solid;
-    border-color: #e7e7e7;
+    // border-width: 1px 1px 0 1px;
+    // border-style: solid;
+    // border-color: #e7e7e7;
     &:last-child{
       border-bottom-width: 1px;
     }

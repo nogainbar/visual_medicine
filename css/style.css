@@ -448,9 +448,9 @@ section.dark-bg .title > hr {
 .btn-color:hover,
 .btn-color:active,
 .btn-color:focus {
-  background-color: #2e9fee;
-  border-color: #2e9fee;
-  color: #fff;
+  background-color: #fff;
+  border-color: #05706E;
+  color: #05706E;
 }
 .btn-color-out {
   color: #05706E;
