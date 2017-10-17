@@ -171,7 +171,7 @@
         <div class="v-center">
           <div class="container">
             <div class="title">
-              <h1 class="upper">Checkout</h1>
+              <h1 class="upper">Cart</h1>
             </div>
           </div>
         </div>
@@ -182,117 +182,75 @@
 
     <section>
       <div class="container">
-        <form method="POST" action="#">
-          <div class="checkout-form">
-            <div class="row">
-              <div class="col-md-5 mb-25">
-                <div class="title">
-                  <h5 class="upper">Billing Address</h5>
-                </div>
-                <div class="form-group">
-                  <label>Full Name</label>
-                  <input class="form-control" name="fullname" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Address 1</label>
-                  <input class="form-control" name="address" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Address 2</label>
-                  <input class="form-control" name="address_2" type="text">
-                </div>
-                <div class="form-group">
-                  <label>City</label>
-                  <input class="form-control" name="city" type="text">
-                </div>
-                <div class="form-group">
-                  <div class="col-xs-6 pl-0">
-                    <label>State</label>
-                    <input class="form-control" name="state" type="text">
-                  </div>
-                  <div class="col-xs-6 pr-0">
-                    <label>Zip Code</label>
-                    <input class="form-control" name="zip" type="text">
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5 col-md-offset-1">
-                <div class="title">
-                  <h5 class="upper">Credit Card Info</h5>
-                </div>
-                <div class="form-group">
-                  <label>Name on Card</label>
-                  <input class="form-control" name="fullname" type="text">
-                </div>
-                <div class="form-group">
-                  <label>Card Number</label>
-                  <input class="form-control" name="card" type="text" placeholder="0000-0000-0000-0000">
-                </div>
-                <div class="form-group">
-                  <div class="col-xs-4 pl-0">
-                    <label>CVV</label>
-                    <input class="form-control" name="cvv" type="text" placeholder="CVV">
-                  </div>
-                  <div class="col-xs-4 pl-0">
-                    <label>Exp. Month</label>
-                    <div class="form-select">
-                      <select class="form-control" name="month">
-                        <option selected="selected" value="">Month</option>
-                        <option value="01">01</option>
-                        <option value="02">02</option>
-                        <option value="03">03</option>
-                        <option value="04">04</option>
-                        <option value="05">05</option>
-                        <option value="06">06</option>
-                        <option value="07">07</option>
-                        <option value="08">08</option>
-                        <option value="09">09</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-xs-4 p-0">
-                    <label>Exp. Year</label>
-                    <div class="form-select">
-                      <select class="form-control" name="year">
-                        <option selected="selected" value="">Year</option>
-                        <option value="2015">2015</option>
-                        <option value="2016">2016</option>
-                        <option value="2017">2017</option>
-                        <option value="2018">2018</option>
-                        <option value="2019">2019</option>
-                        <option value="2020">2020</option>
-                        <option value="2021">2021</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <h5 class="upper">Order Total</h5>
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <h5>$299.99</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <div class="checkout-submit">
-                    <button class="btn btn-color btn-block" type="button">Place order</button>
-                  </div>
+        <div id="cart-wrapper">
+          <table class="table table-bordered" id="cart">
+            <thead>
+              <tr>
+                <th> </th>
+                <th>Photo</th>
+                <th>Product</th>
+                <th>Size and paper</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="cart_item">
+                <td><a href="#" title="Remove this item"><i class="hc-close-circle"></i></a>
+                </td>
+                <td>
+                  <a href="page-VM-shop-single.html">
+                    <img src="VM_images/shop-1.jpg" alt="">
+                  </a>
+                </td>
+                <td><a href="#">Soul Compass artwork</a>
+                </td>
+                <td><span>A0 Hahnemuhle matt paper</span>
+                </td>
+                <td><span>£400</span>
+                </td>
+                <td>
+                  <input class="form-control" type="number" step="1" min="0" value="1" title="Qty" placeholder="Qty">
+                </td>
+                <td class="product-subtotal"><span>£400</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="row">
+            <div class="col-md-6 mb-25">
+            </div>
+            <div class="col-md-6">
+              <div class="cart-summary">
+                <h6 class="upper">Order Details</h6>
+                <hr>
+                <table class="shop_table shop_table_responsive table">
+                  <tbody>
+                    <tr class="cart-subtotal">
+                      <th class="b-0">Subtotal</th>
+                      <td class="b-0"><span>£400</span>
+                      </td>
+                    </tr>
+                    <tr class="order-total">
+                      <th>Total</th>
+                      <td>
+                        <h6 class="upper"><strong>£400</strong></h6>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="proceed-to-checkout">
+                  <button class="btn btn-dark" type="button">Update Cart</button><a class="btn btn-color" href="page-VM-shop-checkout.html">Proceed to Checkout</a>
                 </div>
               </div>
             </div>
-            <!-- end of row-->
           </div>
-        </form>
+        </div>
       </div>
     </section>
 
-    <!-- footer -->
+      <!-- footer -->
         <footer id="footer-widgets">
           <div class="container">
             <div class="row">
@@ -425,4 +383,4 @@
         <script type="text/javascript" src="js/main.js"></script>
       </body>
 
-        </html>
+      </html>
