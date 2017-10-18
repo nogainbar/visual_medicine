@@ -196,3 +196,10 @@ line-height: 1.6;
   border-bottom: 1px solid #e7e7e7;
   padding-bottom: 80px;
 }
+
+.soul-compass {
+  width: 70%;
+  margin: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
