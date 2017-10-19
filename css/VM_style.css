@@ -79,6 +79,10 @@ section.hero-story {
   float: right;
 }
 
+.hero-handwriting {
+  width: 70%;
+}
+
 .hero-text {
   font-size: 32px;
   color: white;
