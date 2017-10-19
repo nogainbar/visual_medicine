@@ -203,3 +203,17 @@ line-height: 1.6;
   padding-left: 0;
   padding-right: 0;
 }
+
+.soul-compass-text > h2 {
+  color: #05706E;
+}
+
+.soul-compass-text > h3 {
+  color: #05706E;
+}
+
+.soul-compass-text > p {
+  font-size: 18px;
+  color: #05706E;
+  font-family: sans-serif;
+}
