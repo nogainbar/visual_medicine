@@ -71,8 +71,8 @@ section.hero-story {
   table-layout: fixed;
   z-index: 200;
   position: relative;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .hero-landing-text h2 {
