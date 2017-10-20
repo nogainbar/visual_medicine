@@ -75,6 +75,10 @@ section.hero-story {
   padding-bottom: 120px;
 }
 
+.hero-landing-text h2 {
+  font-size: 36px;
+}
+
 .hero-story-text-right {
   float: right;
 }
